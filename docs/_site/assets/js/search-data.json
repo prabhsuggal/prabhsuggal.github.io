@@ -9,7 +9,7 @@
     "doc": "Chapter 3",
     "title": "LeetCode",
     "hpath": "Algorithm.DesignManualBook.chap3",
-    "content": ". | Count of Smaller Numbers After Self | . We have to see how many numbers are smaller to self on the right. Naive: Just interate for each element and check how many elements are smaller on thr right for a given index - \\(O(n^2)\\) . Merge Sort : Posting an example for more clarity . void MergeSort(vector&lt;int&gt; &amp;nums, vector&lt;int&gt; &amp;indices, vector&lt;int&gt; &amp;results, int start, int end){ int count = end-start; if(count &gt; 1){ int mid = start + count/2; MergeSort(nums,indices, results, start, mid); MergeSort(nums, indices, results, mid, end); vector&lt;int&gt; tmp; tmp.reserve(count); int idx1 = start, idx2 = mid; int smallcount=0; while(idx1 &lt; mid || idx2 &lt; end){ if((idx2 == end) || (idx1 &lt; mid &amp;&amp; nums[indices[idx1]] &lt;= nums[indices[idx2]])){ tmp.push_back(indices[idx1]); results[indices[idx1]] += smallcount; idx1++; } else{ tmp.push_back(indices[idx2++]); smallcount++; } } move(tmp.begin(), tmp.end(), indices.begin()+start); } } . ",
+    "content": ". | Count of Smaller Numbers After Self | . We have to see how many numbers are smaller to self on the right. Naive: Just interate for each element and check how many elements are smaller on the right for a given index - \\(O(n^2)\\) . Merge Sort : Posting an example for more clarity . void MergeSort(vector&lt;int&gt; &amp;nums, vector&lt;int&gt; &amp;indices, vector&lt;int&gt; &amp;results, int start, int end){ int count = end-start; if(count &gt; 1){ int mid = start + count/2; MergeSort(nums,indices, results, start, mid); MergeSort(nums, indices, results, mid, end); vector&lt;int&gt; tmp; tmp.reserve(count); int idx1 = start, idx2 = mid; int smallcount=0; while(idx1 &lt; mid || idx2 &lt; end){ if((idx2 == end) || (idx1 &lt; mid &amp;&amp; nums[indices[idx1]] &lt;= nums[indices[idx2]])){ tmp.push_back(indices[idx1]); results[indices[idx1]] += smallcount; idx1++; } else{ tmp.push_back(indices[idx2++]); smallcount++; } } move(tmp.begin(), tmp.end(), indices.begin()+start); } } . ",
     "url": "http://localhost:4000/notes/05774b2e-ebf7-4bbc-8171-ad191ba0ae0a.html#leetcode",
     "relUrl": "/notes/05774b2e-ebf7-4bbc-8171-ad191ba0ae0a.html#leetcode"
   },"2": {
@@ -27,38 +27,38 @@
     "url": "http://localhost:4000/notes/1d49cbf3-7a35-4a45-a047-c0170981979c.html",
     "relUrl": "/notes/1d49cbf3-7a35-4a45-a047-c0170981979c.html"
   },"4": {
-    "doc": "DesignManualBook",
-    "title": "DesignManualBook",
-    "hpath": "Algorithm.DesignManualBook",
-    "content": " ",
-    "url": "http://localhost:4000/notes/3894a7e4-8fff-47f1-b2fd-524cd48e077f.html",
-    "relUrl": "/notes/3894a7e4-8fff-47f1-b2fd-524cd48e077f.html"
-  },"5": {
     "doc": 404,
     "title": "404",
     "hpath": null,
     "content": "Page not found . ",
     "url": "http://localhost:4000/404.html#404",
     "relUrl": "/404.html#404"
-  },"6": {
+  },"5": {
     "doc": 404,
     "title": 404,
     "hpath": null,
     "content": " ",
     "url": "http://localhost:4000/404.html",
     "relUrl": "/404.html"
+  },"6": {
+    "doc": "DesignManualBook",
+    "title": "DesignManualBook",
+    "hpath": "Algorithm.DesignManualBook",
+    "content": " ",
+    "url": "http://localhost:4000/notes/4ea10214-25d6-4b91-a3e2-4ef9e8c0f1c0.html",
+    "relUrl": "/notes/4ea10214-25d6-4b91-a3e2-4ef9e8c0f1c0.html"
   },"7": {
     "doc": "Home",
     "title": "Welcome to the DEN",
     "hpath": "root",
-    "content": "This is the root of my vault. If you decide to visit my entire github page, this will be your landing page. I have build this website using dendron. It’s an open source project. Really Awesome. ",
+    "content": "This is the root of my vault. If you decide to visit my github page, this will be your landing page. I have build this website using dendron. It’s an open source project. Really Awesome. ",
     "url": "http://localhost:4000/#welcome-to-the-den",
     "relUrl": "/#welcome-to-the-den"
   },"8": {
     "doc": "Home",
     "title": "What’s it about",
     "hpath": "root",
-    "content": "I plan to use this to jot down my notes for some of the problems I have wokred on. ",
+    "content": "I plan to use this to jot down my notes for some of the problems I have worked on. ",
     "url": "http://localhost:4000/#whats-it-about",
     "relUrl": "/#whats-it-about"
   },"9": {
