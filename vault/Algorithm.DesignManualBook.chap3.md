@@ -2,7 +2,7 @@
 id: 05774b2e-ebf7-4bbc-8171-ad191ba0ae0a
 title: Chapter 3
 desc: ''
-updated: 1608356939324
+updated: 1608359437009
 created: 1598457956604
 stub: false
 ---
@@ -17,7 +17,7 @@ We have to see how many numbers are smaller to self on the right.
 
 
 **Naive**:
-Just interate for each element and check how many elements are smaller on thr right for a given index  - **$$O(n^2)$$**
+Just interate for each element and check how many elements are smaller on the right for a given index  - **$$O(n^2)$$**
 
 **Merge Sort** :
 Posting an example for more [clarity](https://leetcode.com/problems/count-of-smaller-numbers-after-self/discuss/76607/C++-O(nlogn)-Time-O(n)-Space-MergeSort-Solution-with-Detail-Explanation)
