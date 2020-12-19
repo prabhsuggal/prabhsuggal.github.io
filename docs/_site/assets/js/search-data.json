@@ -1,92 +1,78 @@
 {"0": {
-    "doc": "Welcome",
-    "title": "Welcome to Dendron 🌲",
-    "hpath": "dendron.welcome",
-    "content": ". Dendron is a new approach to note taking, one that combines the freedom of Roam’s every note exists everywhere philosophy with the organization provided by flexible hierarchies. We call this the hierarchy first approach to note taking. ",
-    "url": "http://localhost:4000/notes/05774b2e-ebf7-4bbc-8171-ad191ba0ae0a.html#welcome-to-dendron-",
-    "relUrl": "/notes/05774b2e-ebf7-4bbc-8171-ad191ba0ae0a.html#welcome-to-dendron-"
-  },"1": {
-    "doc": "Welcome",
-    "title": "What is a Dendron?",
-    "hpath": "dendron.welcome",
-    "content": ". | Dendron is the greek word for tree. It’s a reference to the hierarchal note taking that Dendron(3) enables. | Dendron is another word for dendrite which is an extension of the nerve cell that sends and receives signals in the brain. Think of Dendron(3) as a digital nervous system that helps you consolidate all the information that you care about in the fastest and most efficient way possible. | Dendron is a local-first, markdown based, hierarchical note taking tool. It is meant to help you build, organize, and share knowledge bases of any size. | . ",
-    "url": "http://localhost:4000/notes/05774b2e-ebf7-4bbc-8171-ad191ba0ae0a.html#what-is-a-dendron",
-    "relUrl": "/notes/05774b2e-ebf7-4bbc-8171-ad191ba0ae0a.html#what-is-a-dendron"
-  },"2": {
-    "doc": "Welcome",
-    "title": "How do I get started?",
-    "hpath": "dendron.welcome",
-    "content": ". | Launch the command bar inside vscode: . | Linux: Ctrl+Shift+P | macOS: Cmd+Shift+P | Windows: Ctrl+Shift+P | . | Paste the following command and press Enter: | . &gt; Dendron: Initialize Workspace . When the workspace opens, it will show dialogue to install additional recommended extensions. ",
-    "url": "http://localhost:4000/notes/05774b2e-ebf7-4bbc-8171-ad191ba0ae0a.html#how-do-i-get-started",
-    "relUrl": "/notes/05774b2e-ebf7-4bbc-8171-ad191ba0ae0a.html#how-do-i-get-started"
-  },"3": {
-    "doc": "Welcome",
-    "title": "Welcome",
-    "hpath": "dendron.welcome",
+    "doc": "Chapter 3",
+    "title": "Chapter 3",
+    "hpath": "Algorithm.DesignManualBook.chap3",
     "content": " ",
     "url": "http://localhost:4000/notes/05774b2e-ebf7-4bbc-8171-ad191ba0ae0a.html",
     "relUrl": "/notes/05774b2e-ebf7-4bbc-8171-ad191ba0ae0a.html"
+  },"1": {
+    "doc": "Chapter 3",
+    "title": "LeetCode",
+    "hpath": "Algorithm.DesignManualBook.chap3",
+    "content": ". | Count of Smaller Numbers After Self | . We have to see how many numbers are smaller to self on the right. Naive: Just interate for each element and check how many elements are smaller on thr right for a given index - \\(O(n^2)\\) . Merge Sort : Posting an example for more clarity . void MergeSort(vector&lt;int&gt; &amp;nums, vector&lt;int&gt; &amp;indices, vector&lt;int&gt; &amp;results, int start, int end){ int count = end-start; if(count &gt; 1){ int mid = start + count/2; MergeSort(nums,indices, results, start, mid); MergeSort(nums, indices, results, mid, end); vector&lt;int&gt; tmp; tmp.reserve(count); int idx1 = start, idx2 = mid; int smallcount=0; while(idx1 &lt; mid || idx2 &lt; end){ if((idx2 == end) || (idx1 &lt; mid &amp;&amp; nums[indices[idx1]] &lt;= nums[indices[idx2]])){ tmp.push_back(indices[idx1]); results[indices[idx1]] += smallcount; idx1++; } else{ tmp.push_back(indices[idx2++]); smallcount++; } } move(tmp.begin(), tmp.end(), indices.begin()+start); } } . ",
+    "url": "http://localhost:4000/notes/05774b2e-ebf7-4bbc-8171-ad191ba0ae0a.html#leetcode",
+    "relUrl": "/notes/05774b2e-ebf7-4bbc-8171-ad191ba0ae0a.html#leetcode"
+  },"2": {
+    "doc": "About me",
+    "title": "About Me",
+    "hpath": "self",
+    "content": "My name is Prabhsimrandeep Singh. Currently I work in Juniper networks as a timing engineer. I work on implemeting clocking and synchronization protocols like syncE and PTP. I am a big fan of TV shows. In my free time, I go to hacker news to get some tech gossip. ",
+    "url": "http://localhost:4000/notes/1d49cbf3-7a35-4a45-a047-c0170981979c.html#about-me",
+    "relUrl": "/notes/1d49cbf3-7a35-4a45-a047-c0170981979c.html#about-me"
+  },"3": {
+    "doc": "About me",
+    "title": "About me",
+    "hpath": "self",
+    "content": " ",
+    "url": "http://localhost:4000/notes/1d49cbf3-7a35-4a45-a047-c0170981979c.html",
+    "relUrl": "/notes/1d49cbf3-7a35-4a45-a047-c0170981979c.html"
   },"4": {
+    "doc": "DesignManualBook",
+    "title": "DesignManualBook",
+    "hpath": "Algorithm.DesignManualBook",
+    "content": " ",
+    "url": "http://localhost:4000/notes/3894a7e4-8fff-47f1-b2fd-524cd48e077f.html",
+    "relUrl": "/notes/3894a7e4-8fff-47f1-b2fd-524cd48e077f.html"
+  },"5": {
     "doc": 404,
     "title": "404",
     "hpath": null,
     "content": "Page not found . ",
     "url": "http://localhost:4000/404.html#404",
     "relUrl": "/404.html#404"
-  },"5": {
+  },"6": {
     "doc": 404,
     "title": 404,
     "hpath": null,
     "content": " ",
     "url": "http://localhost:4000/404.html",
     "relUrl": "/404.html"
-  },"6": {
-    "doc": "Root",
-    "title": "Welcome to Dendron",
-    "hpath": "root",
-    "content": "This is the root of your dendron vault. If you decide to publish your entire vault, this will be your landing page. You are free to customize any part of this page except the frontmatter on top. ",
-    "url": "http://localhost:4000/#welcome-to-dendron",
-    "relUrl": "/#welcome-to-dendron"
   },"7": {
-    "doc": "Root",
-    "title": "Root",
+    "doc": "Home",
+    "title": "Welcome to the DEN",
+    "hpath": "root",
+    "content": "This is the root of my vault. If you decide to visit my entire github page, this will be your landing page. I have build this website using dendron. It’s an open source project. Really Awesome. ",
+    "url": "http://localhost:4000/#welcome-to-the-den",
+    "relUrl": "/#welcome-to-the-den"
+  },"8": {
+    "doc": "Home",
+    "title": "What’s it about",
+    "hpath": "root",
+    "content": "I plan to use this to jot down my notes for some of the problems I have wokred on. ",
+    "url": "http://localhost:4000/#whats-it-about",
+    "relUrl": "/#whats-it-about"
+  },"9": {
+    "doc": "Home",
+    "title": "Home",
     "hpath": "root",
     "content": " ",
     "url": "http://localhost:4000/",
     "relUrl": "/"
-  },"8": {
-    "doc": "Quickstart",
-    "title": "QuickStart",
-    "hpath": "dendron",
-    "content": "Welcome to Dendron! This guide will help get you started with your knowledge base. ",
-    "url": "http://localhost:4000/notes/e86ac3ab-dbe1-47a1-bcd7-9df0d0490b40.html#quickstart",
-    "relUrl": "/notes/e86ac3ab-dbe1-47a1-bcd7-9df0d0490b40.html#quickstart"
-  },"9": {
-    "doc": "Quickstart",
-    "title": "The Trail 🥾",
-    "hpath": "dendron",
-    "content": "This section covers the basics of Dendron. Get started on the right foot and start growing your knowledge base. | Go through Dendron’s basic concepts | Do your first lookup - a better way to find your notes | Learn about schemas - a flexible type system for all your notes | Use a snippet | Insert an image | Create some links | Explore additional features from Dendron’s bundled extensions | Publish your vault | Join us on discord and discuss all things knowledge management with your fellow trail blazers. | . ",
-    "url": "http://localhost:4000/notes/e86ac3ab-dbe1-47a1-bcd7-9df0d0490b40.html#the-trail-",
-    "relUrl": "/notes/e86ac3ab-dbe1-47a1-bcd7-9df0d0490b40.html#the-trail-"
   },"10": {
-    "doc": "Quickstart",
-    "title": "The Woods 🌲",
-    "hpath": "dendron",
-    "content": "This section covers advanced functionality in Dendron. Become a seasoned backpacker by mastering these trails. | Check out our case studies | Read our FAQ | Explore the graph view | Execute custom Dendron commands | Understand frontmatter | Adopt a pod | Create a special note | . ",
-    "url": "http://localhost:4000/notes/e86ac3ab-dbe1-47a1-bcd7-9df0d0490b40.html#the-woods-",
-    "relUrl": "/notes/e86ac3ab-dbe1-47a1-bcd7-9df0d0490b40.html#the-woods-"
-  },"11": {
-    "doc": "Quickstart",
-    "title": "The Wilderness ⛰️",
-    "hpath": "dendron",
-    "content": "This section covers additional topics and the wider ecosystem around Dendron. | Find recipes to common operations (or contribute your own) | Found an issue or want to submit a feature request? Do so on GitHub | See and vote on what’s coming next by checking out our public roadmap | Get familiar with editing in VS Code, the editor that Dendron is built upon | Stay tuned for more wilderness coming soon! | . ",
-    "url": "http://localhost:4000/notes/e86ac3ab-dbe1-47a1-bcd7-9df0d0490b40.html#the-wilderness-%EF%B8%8F",
-    "relUrl": "/notes/e86ac3ab-dbe1-47a1-bcd7-9df0d0490b40.html#the-wilderness-️"
-  },"12": {
-    "doc": "Quickstart",
-    "title": "Quickstart",
-    "hpath": "dendron",
-    "content": " ",
+    "doc": "Algorithms",
+    "title": "Algorithms",
+    "hpath": "Algorithm",
+    "content": "These are my Notes when I was reading the book: The Algorithm Design manual . I have jotted down the solutions for some of the coding problems I liked. ",
     "url": "http://localhost:4000/notes/e86ac3ab-dbe1-47a1-bcd7-9df0d0490b40.html",
     "relUrl": "/notes/e86ac3ab-dbe1-47a1-bcd7-9df0d0490b40.html"
   }

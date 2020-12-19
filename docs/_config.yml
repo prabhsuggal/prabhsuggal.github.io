@@ -18,6 +18,9 @@ twitter:
 author:
   twitter: dendronhq
 
+enable_mathjax: true;
+kramdown:
+  math_engine: mathjax
 defaults:
   -
     scope:

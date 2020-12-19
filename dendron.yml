@@ -6,5 +6,6 @@ site:
     copyAssets: true
     siteHierarchies:
         - root
+        - self
     siteRootDir: docs
     usePrettyRefs: true
