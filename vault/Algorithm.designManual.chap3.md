@@ -4,17 +4,14 @@ title: Welcome
 desc: ''
 updated: 1608347186792
 created: 1598457956604
-parent: e7e7b0f8-05de-4668-8059-d1f193aab462
-children: []
 stub: false
-fname: Algorithm.designManual.chap3
-hpath: Algorithm.designManual.chap3
 ---
+
 # Chapter 3
 
 ## LeetCode
 
-- [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)
+* [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)
 
 We have to see how many numbers are smaller to self on the right. 
 **Naive**:
@@ -50,4 +47,3 @@ void MergeSort(vector<int> &nums, vector<int> &indices, vector<int> &results, in
         }
     }
 ```
-

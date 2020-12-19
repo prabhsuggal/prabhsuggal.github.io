@@ -4,17 +4,12 @@ title: Quickstart
 desc: ''
 updated: 1608346042700
 created: 1595170096361
-parent: 86325edb-b35b-4e45-ad38-4079116a929a
-children:
-  - e7e7b0f8-05de-4668-8059-d1f193aab462
 stub: false
 nav_order: 1
-fname: Algorithm
-hpath: Algorithm
 ---
+
 # Algorithms
 
 These are my Notes when I was reading the book: The Algorithm Design manual
 
 I have jotted down the solutions for some of the coding problems I liked.
-

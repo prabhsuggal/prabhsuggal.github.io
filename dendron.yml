@@ -2,8 +2,6 @@ version: 1
 vaults:
     -
         fsPath: vault
-    -
-        fsPath: vault
 site:
     copyAssets: true
     siteHierarchies:
