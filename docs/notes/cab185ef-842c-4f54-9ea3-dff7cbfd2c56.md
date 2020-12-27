@@ -1,9 +1,9 @@
 ---
-id: 701761db-05d8-420f-a948-c98e979031d1
+id: cab185ef-842c-4f54-9ea3-dff7cbfd2c56
 title: DesignManualBook
 desc: ''
-updated: 1609063314388
-created: 1609063314388
+updated: 1609063885724
+created: 1609063885724
 stub: true
 parent: e86ac3ab-dbe1-47a1-bcd7-9df0d0490b40
 children:
