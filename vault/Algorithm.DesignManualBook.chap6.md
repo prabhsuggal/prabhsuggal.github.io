@@ -2,7 +2,7 @@
 id: 17562e75-6070-454a-bae1-abfca780bc6d
 title: Chapter 6
 desc: ''
-updated: 1609404546795
+updated: 1609404805197
 created: 1609401702886
 ---
 
@@ -27,9 +27,9 @@ $$
 
 ## Bloom Filters
 
-What's this about? To prevent multiple false positives, we can use this technique to reduce the probability if false positives. In normal hashing, we calculate h(x) and check if the value stored is same as the searched input. 
+What's this about? To prevent multiple false positives, we can use this technique to reduce the probability of false positives. In normal hashing, we calculate h(x) and check if the value stored is same as the searched input. 
 
-Instead of that we can have multiple hashing functions $$h_1(x), h_2(x), ..., h_k(x)$$. When we search fo a value, we calculate all these hashes and check if we get a set bit for each of these hash functions.  
+Instead of that we can have multiple hashing functions $$h_1(x), h_2(x), ..., h_k(x)$$. When we search for a value, we calculate all these hashes and check if we get a set bit for each of these hash functions.  
 ![various values of k](/assets/images/2020-12-31-13-59-05.png)
 
 We can see that for $$k >= 2 $$, we get reduced probabilities
