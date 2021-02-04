@@ -20,6 +20,8 @@
         "editor.tabCompletion": "on",
         "cSpell.words": [
             "Minwise",
+            "krushkal",
+            "prim",
             "usecases"
         ]
     },

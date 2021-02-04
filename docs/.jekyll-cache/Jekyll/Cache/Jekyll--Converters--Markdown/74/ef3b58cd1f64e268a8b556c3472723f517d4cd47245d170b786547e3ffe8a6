@@ -1,0 +1,64 @@
+I"Ä<h1 id="leetcode">LeetCode</h1>
+
+<h2 id="binary-index-tree-fenwick-tree">Binary Index Tree/ Fenwick Tree</h2>
+
+<p>This is useful for cases when we need to perform two types of operation on an array:</p>
+
+<ul>
+  <li>updating arr[i]</li>
+  <li>operation which involves arr[0],â€¦, arr[i] eg: sum(0, a[i]), max(0, a[i])</li>
+</ul>
+
+<p>We can see that in normal case, update step takes O(1) time and 2nd operation takes O(n) time. Using BIT, we can run both these steps at O(log n). Same is the use case for segment trees.</p>
+
+<p>Here we will consider BIT tree where the 2nd operation is sum. First step is the update step. Here is the code(credits:<a href="https://www.geeksforgeeks.org/binary-indexed-tree-or-fenwick-tree-2/">GOG</a>):</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Returns sum of arr[0..index]. This function assumes </span>
+<span class="c1">// that the array is preprocessed and partial sums of </span>
+<span class="c1">// array elements are stored in BITree[]. </span>
+<span class="kt">int</span> <span class="nf">getSum</span><span class="p">(</span><span class="kt">int</span> <span class="n">BITree</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">index</span><span class="p">)</span> 
+<span class="p">{</span> 
+    <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// Initialize result </span>
+  
+    <span class="c1">// index in BITree[] is 1 more than the index in arr[] </span>
+    <span class="n">index</span> <span class="o">=</span> <span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> 
+  
+    <span class="c1">// Traverse ancestors of BITree[index] </span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">index</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">)</span> 
+    <span class="p">{</span> 
+        <span class="c1">// Add current element of BITree to sum </span>
+        <span class="n">sum</span> <span class="o">+=</span> <span class="n">BITree</span><span class="p">[</span><span class="n">index</span><span class="p">];</span> 
+  
+        <span class="c1">// Move index to parent node in getSum View</span>
+        <span class="c1">// Intuition:</span>
+        <span class="c1">// index = a1b (where b are all zeros and 1 represents the least set bit)</span>
+        <span class="c1">// we have -index = 2's complement of index i.e. a'0b' + 1 = a'1b</span>
+        <span class="c1">//index &amp; (-index) = a1b &amp; a'1b = 010 (least set bit of index)</span>
+        <span class="c1">// in this step we are removing the last set bit of index in each iteration</span>
+        <span class="c1">// index &amp; (-index)</span>
+        <span class="n">index</span> <span class="o">-=</span> <span class="n">index</span> <span class="o">&amp;</span> <span class="p">(</span><span class="o">-</span><span class="n">index</span><span class="p">);</span> 
+    <span class="p">}</span> 
+    <span class="k">return</span> <span class="n">sum</span><span class="p">;</span> 
+<span class="p">}</span> 
+  
+<span class="c1">// Updates a node in Binary Index Tree (BITree) at given index </span>
+<span class="c1">// in BITree. The given value 'val' is added to BITree[i] and  </span>
+<span class="c1">// all of its ancestors in tree. </span>
+<span class="kt">void</span> <span class="nf">updateBIT</span><span class="p">(</span><span class="kt">int</span> <span class="n">BITree</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="kt">int</span> <span class="n">index</span><span class="p">,</span> <span class="kt">int</span> <span class="n">val</span><span class="p">)</span> 
+<span class="p">{</span> 
+    <span class="c1">// index in BITree[] is 1 more than the index in arr[] </span>
+    <span class="n">index</span> <span class="o">=</span> <span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> 
+  
+    <span class="c1">// Traverse all ancestors and add 'val' </span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">index</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">)</span> 
+    <span class="p">{</span> 
+    <span class="c1">// Add 'val' to current node of BI Tree </span>
+    <span class="n">BITree</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">+=</span> <span class="n">val</span><span class="p">;</span> 
+  
+    <span class="c1">// Update index to that of parent in update View </span>
+    <span class="n">index</span> <span class="o">+=</span> <span class="n">index</span> <span class="o">&amp;</span> <span class="p">(</span><span class="o">-</span><span class="n">index</span><span class="p">);</span> 
+    <span class="p">}</span> 
+<span class="p">}</span> 
+</code></pre></div></div>
+
+:ET
