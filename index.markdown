@@ -4,3 +4,8 @@
 
 layout: home
 ---
+# Welcome to the DEN
+
+This is the root of my vault. If you decide to visit my github page, this will be your landing page.
+
+I have build this website using [Jekyll](https://jekyllrb.com/). Really Awesome.
