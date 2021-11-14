@@ -2,10 +2,10 @@
 layout: post
 category: AlgorithmDesignBook
 tags: [AlgorithmDesignBook]
-title: Exercises
+title: Algorithm Design Book - Chapter 4[Exercises]
 ---
 
-# Exercises
+### Exercises
 
 * **4.4** - Counting sort
 

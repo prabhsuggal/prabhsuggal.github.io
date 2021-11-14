@@ -2,12 +2,10 @@
 layout: post
 category: AlgorithmDesignBook
 tags: [AlgorithmDesignBook]
-title: Chapter 3
+title: Algorithm Design Book - Chapter 3
 ---
 
-# Chapter 3
-
-## LeetCode
+### LeetCode
 
 * [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)
 

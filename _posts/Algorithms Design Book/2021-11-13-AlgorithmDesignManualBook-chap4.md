@@ -2,12 +2,14 @@
 layout: post
 category: AlgorithmDesignBook
 tags: [AlgorithmDesignBook]
-title: Chapter 4
+title: Algorithm Design Book - Chapter 4
 ---
 
-# Sorting
+### Sorting
+* [Chapter Exercises]({% post_url 2021-11-13-AlgorithmDesignManualBook-chap4-Exercises %})
+* [LeetCode Problems]({% post_url 2021-11-13-AlgorithmDesignManualBook-chap4-LeetCode %})
 
-## Heap Sort
+### Heap Sort
 
 Constructing a heap takes O(n) time. removing min/max element causes O(log n) which turn to O(nlog n) for n elements.
 
@@ -15,11 +17,11 @@ Constructing a heap takes O(n) time. removing min/max element causes O(log n) wh
 
 Heap Sort can be seen as improved version of selection sort. We are just using a better data structure. In selection sort, swap takes $$O(1)$$ time. but getting minimum item takes $$O(n)$$. But we can use a data structure like priority queues/ BST which has $$O(n)$$ search time which reduces time complexity to $$O(nlog n)$$
 
-## Merge Sort
+### Merge Sort
 
 The most important thing to remember here is that divide and conquer is your friend. It's always useful. so keep it in mind when going through the problems. you can use it a lot of times. Not just for Sorting.
 
-## Quick Sort
+### Quick Sort
 
 Have read this too many times. But now comes the intuition. One thing which is important is elements less than p are in range [0, firsthigh) so firsthigh is never part of that bunch. So when we swap s[i] and s[firsthigh], we are just swaping s[i](< p) with s[firsthigh](>= p). also we don't include pivot element in the loop because it won't make a change as for i=p, s[i] = s[p].
 ```c
@@ -37,7 +39,7 @@ swap(&s[p], &s[firsthigh]);
 ### Randomized Algorithms
 Quicksort can be improved upon by randomizing the input set. This can still give the worst case but it won't be dependent on the input itself. Such randomization can help us in preventing worst case for a certain input.
 
-## Wiggle Sort
+### Wiggle Sort
 This can be done in O(n) time by doing a single traversal of given array. The idea is based on the fact that if we make sure that all even positioned (at index 0, 2, 4, ..) elements are greater than their adjacent odd elements, we don’t need to worry about odd positioned element.
 ```cpp
 // This function sorts arr[0..n-1] in wave form, i.e., arr[0] >=

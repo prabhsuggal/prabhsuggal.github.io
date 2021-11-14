@@ -2,16 +2,16 @@
 layout: post
 category: AlgorithmDesignBook
 tags: [AlgorithmDesignBook]
-title: Chapter 6
+title: Algorithm Design Book - Chapter 6
 ---
 
-# Hashing and Randomized Algorithms
+### Hashing and Randomized Algorithms
 
-## Balls and Bins
+### Balls and Bins
 
 Hashing can be seen as assigning bucket for a given ball(or value). If we get lucky, we will always have a single ball in each bucket. This ensure we have an expected access time of O(1). Some of the probability related jargon involved has been mentioned in the book.
 
-## Randomization In Hashing
+### Randomization In Hashing
 
 In hashing we saw that things can go really wrong for some inputs. To prevent that we add some randomization to the hashing function. This makes sure that worst case in hashing is not attached to a particular input. Rather it is due to really bad luck.
 
@@ -24,7 +24,7 @@ $$
 h(x) = (f(x)mod(p))mod(m)
 $$
 
-## Bloom Filters
+### Bloom Filters
 
 What's this about? To prevent multiple false positives, we can use this technique to reduce the probability of false positives. In normal hashing, we calculate h(x) and check if the value stored is same as the searched input.
 
@@ -33,7 +33,7 @@ Instead of that we can have multiple hashing functions $$h_1(x), h_2(x), ..., h_
 
 We can see that for $$k >= 2 $$, we get reduced probabilities
 
-## Minwise Hashing
+### Minwise Hashing
 
 This is one of the new things, I learnt from this book. It is mostly using probability to make some conclusions which are useful.
 

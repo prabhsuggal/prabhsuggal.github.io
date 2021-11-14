@@ -2,10 +2,10 @@
 layout: post
 category: AlgorithmDesignBook
 tags: [AlgorithmDesignBook]
-title: Exercises
+title: Algorithm Design Book - Chapter 10[Exercises]
 ---
 
-# Exercises
+### Exercises
 
 * _Consider a linear keyboard of lowercase letters and numbers, where the leftmost 26 keys are the letters A–Z in order, followed by the digits 0–9 in order, followed by the 30 punctuation characters in a prescribed order, and ended on a blank. Assume you start with your left index finger on the “A” and your right index finger on the blank._
 
@@ -67,7 +67,7 @@ title: Exercises
         for j in range(26): # one finger currently on s[i-1], other finger on j
              dp[i][j] = min(dp[i][j], dp[i-1][j] + dist(lst,cur)) # move first finger, so second finger remains on j
              dp[i][lst] = min(dp[i][lst], dp[i-1][j] + dist(j,cur))   # move second finger, so second finger becomes the new "first finger"
-                                                                                # and now the old "first finger" becomes the new "second finger"
+             # and now the old "first finger" becomes the new "second finger"
     res = min(dp[N-1])
     return res
     ```

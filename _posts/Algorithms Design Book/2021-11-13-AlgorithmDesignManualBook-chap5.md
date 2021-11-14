@@ -2,16 +2,16 @@
 layout: post
 category: AlgorithmDesignBook
 tags: [AlgorithmDesignBook]
-title: Chapter 5
+title: Algorithm Design Book - Chapter 5
 ---
 
-# Chapter 5
+* [Leetcode Solutions]({% post_url 2021-11-13-AlgorithmDesignManualBook-chap5-Leetcode %})
 
-## Divide And Conquer
+### Divide And Conquer
 
 This is one of those things which can come handy during unusual times. Binary search is a well known algorithm which has a lot of power. But sometimes it can be tricky to see all its usecases. I will discuss some of them here.
 
-## Binary Search
+### Binary Search
 ```cpp
 int binarySearch(int arr[], int l, int r, int x)
 {
@@ -87,7 +87,7 @@ int last(int arr[], int x, int n)
 }
 ```
 
-## Recurrence Relations
+### Recurrence Relations
 
 These relations are useful for Divide and conquer. The recurrences are of the form.
 $$
@@ -97,10 +97,10 @@ $$
 2. If $$f(n) = Θ(n^{log_b a})$$, then $$T(n) = Θ(n^{log_b a} lg n)$$.
 3. If $$ f(n) = O(n^{log_b a + e})$$ for some constant $$e > 0$$, and if $$ a.f(n/b) [<=] c.f(n)$$ for some $$c [<] 1$$, then $$T(n) = Θ(f(n))$$.
 
-## Fast Convolution
+### Fast Convolution
 
 Divide and conquer can be used here as well. We can solve these kind of problems using FFT in O(log n)
 
-## Parallelism
+### Parallelism
 
 Divide and conquer is used widely because it can enable parallel processing. But It may not be that easy.

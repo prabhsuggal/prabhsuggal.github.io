@@ -5,13 +5,13 @@ tags: [AlgorithmDesignBook]
 title: Algorithms Design Book Solutions
 ---
 
-# Algorithms
+### Algorithms
 
 These are my Notes when I was reading the book: The Algorithm Design manual
 
 I have jotted down the solutions for some of the coding problems I liked.
 
-# Chapterwise Notes
+### Chapterwise Notes
 
 - [Chapter 3]({% post_url 2021-11-13-AlgorithmDesignManualBook-chap3 %})
 - [Chapter 4]({% post_url 2021-11-13-AlgorithmDesignManualBook-chap4 %})

@@ -2,12 +2,12 @@
 layout: post
 category: AlgorithmDesignBook
 tags: [AlgorithmDesignBook]
-title: Chapter 8
+title: Algorithm Design Book - Chapter 8
 ---
 
-# Weighted Graphs
+### Weighted Graphs
 
-## Minimum Spanning Trees
+### Minimum Spanning Trees
 
 We can get the MSTs using algorithms like Prim's Algorithm and Krushkal's Algorithm.  I am going to talk about some of the extensions of this problem. Here are some of the interesting ones:
 * _Maximum spanning trees_ - The maximum spanning tree of any graph can be found by simply negating the weights of all edges and running Prim’s or Kruskal’s algorithm. The most negative spanning tree in the negated graph is the maximum spanning tree in the original.
@@ -16,7 +16,7 @@ We can get the MSTs using algorithms like Prim's Algorithm and Krushkal's Algori
 Such bottleneck spanning trees have interesting applications when the edge weights are interpreted as costs, capacities, or strengths. A less efficient but conceptually simpler way to solve such problems might be to delete all “heavy” edges from the graph and ask whether the result is still connected. These kinds of tests can be done with BFS or DFS.
 
 
-# Shortest Path
+### Shortest Path
 
 _Guru Mantra_ : **Try to design graphs, not algorithms**
 Context - Suppose we are given a directed graph whose weights are on the vertices instead of the edges. Thus, the cost of a path from x to y is the sum of the weights of all vertices on the path. Give an efficient algorithm for finding shortest paths on vertex-weighted graphs.

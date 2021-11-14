@@ -2,12 +2,12 @@
 layout: post
 category: AlgorithmDesignBook
 tags: [AlgorithmDesignBook]
-title: Coding Problems
+title: Algorithm Design Book - Chapter 4[Coding Problems]
 ---
 
-# LeetCode
+### LeetCode
 
-## Binary Index Tree/ Fenwick Tree
+### Binary Index Tree/ Fenwick Tree
 
 This is useful for cases when we need to perform two types of operation on an array:
 * updating arr[i]
